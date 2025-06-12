@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <form action="/form-handling-url" method="post">
+      <fieldset>
+        <legend>Add user</legend>
+
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="first-name">
+        </div>
+
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="last-name">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+          <label for="status">
+            <select name="status" id="status">
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="guest">Guest</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <p>Choose your favorite programming language.</p>
+          <input type="radio" id="html" name="fav-language">
+          <label for="html">HTML</label>
+          <input type="radio" id="css" name="fav-language">
+          <label for="css">CSS</label>
+          <input type="radio" id="javascript" name="fav-language">
+          <label for="javascript">JavaScript</label>
+        </div>
+
+        <div>
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="comments"></textarea>
+        </div>
+
+        <div>
+          <label for="currentDate">Current Date</label>
+          <input type="date" id="currentDate" name="currentdate">
+        </div>
+
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Sign up for newsletter</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="termsAndCondition" name="terms-and-conditions">
+          <label for="termsAndCondition">Agree to terms and conditions</label>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+
+      </fieldset>
+    </form>
+  </body>
+</html>
