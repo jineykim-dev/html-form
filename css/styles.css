@@ -1,0 +1,80 @@
+#form-title {
+  text-align: left;
+  border: 1px solid black;
+  padding: 0px 20px 0px 5px;
+  margin-left: 50px;
+  border-radius: 4px;
+  background-color: rgb(190, 122, 160);
+}
+
+#form-body {
+  width: 300px;
+  margin: 0 auto;
+}
+
+fieldset {
+  background-color: rgb(250, 227, 227);
+}
+
+body {
+  text-align: center;
+}
+
+input, textarea, select, option {
+  width: 100%;
+  padding: 0;
+  margin: 2px 0;
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+
+.columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.columns-2 input, .columns-2 select {
+  width: 95%;
+}
+
+#language-prompt {
+  font-size: 0.85em;
+}
+
+.columns-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+label[for="comments"] {
+  font-size: 1.3em;
+}
+
+input[type="checkbox"] {
+  width: 70%;
+}
+
+label[for="newsletter"], label[for="termsAndCondition"] {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.columns-4 {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 4fr;
+}
+
+button {
+  width: 50%;
+  margin-top: 20px;
+  padding: 3px 0;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 0.9em;
+}

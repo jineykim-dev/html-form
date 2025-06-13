@@ -2,72 +2,81 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Survey Form</title>
   </head>
   <body>
     <form action="/form-handling-url" method="post">
       <fieldset>
-        <legend>Add user</legend>
+        <legend id="form-title">Add user</legend>
+          <div id="form-body">
+            <div>
+              <label for="firstName">First Name: <br></label>
+              <input type="text" id="firstName" name="first-name">
+            </div>
 
-        <div>
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="first-name">
-        </div>
+            <div>
+              <label for="lastName">Last Name: <br></label>
+              <input type="text" id="lastName" name="last-name">
+            </div>
 
-        <div>
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="last-name">
-        </div>
+            <div>
+              <label for="email">Email: <br></label>
+              <input type="email" id="email" name="email">
+            </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-        </div>
+            <div class="columns-2">
+              <div>
+                <label for="status">Status: <br>
+                  <select name="status" id="status">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="guest">Guest</option>
+                  </select>
+                </label>
+              </div>
 
-        <div>
-          <label for="status">
-            <select name="status" id="status">
-              <option value="student">Student</option>
-              <option value="teacher">Teacher</option>
-              <option value="guest">Guest</option>
-            </select>
-          </label>
-        </div>
 
-        <div>
-          <p>Choose your favorite programming language.</p>
-          <input type="radio" id="html" name="fav-language">
-          <label for="html">HTML</label>
-          <input type="radio" id="css" name="fav-language">
-          <label for="css">CSS</label>
-          <input type="radio" id="javascript" name="fav-language">
-          <label for="javascript">JavaScript</label>
-        </div>
+              <div>
+                <label for="date">Date: <br></label>
+                <input type="date" id="date" name="current-date">
+              </div>
+            </div>
 
-        <div>
-          <label for="comments">Comments</label>
-          <textarea name="comments" id="comments"></textarea>
-        </div>
+            <div>
+              <p id="language-prompt">Choose your favorite programming language:</p>
+              <div class="columns-3">
+                <div>
+                  <input type="radio" id="html" name="fav-language">
+                  <label for="html">HTML</label>
+                </div>
+                <div>
+                  <input type="radio" id="css" name="fav-language">
+                  <label for="css">CSS</label>
+                </div>
+                <div>
+                  <input type="radio" id="javascript" name="fav-language">
+                  <label for="javascript">JavaScript</label>
+                </div>
+              </div>
+            </div>
 
-        <div>
-          <label for="currentDate">Current Date</label>
-          <input type="date" id="currentDate" name="currentdate">
-        </div>
+            <div>
+              <label for="comments">Comments: <br></label>
+              <textarea name="comments" id="comments" rows="4"></textarea>
+            </div>
 
-        <div>
-          <input type="checkbox" id="newsletter" name="newsletter">
-          <label for="newsletter">Sign up for newsletter</label>
-        </div>
+            <div class="columns-4">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Sign up for newsletter</label>
+                <input type="checkbox" id="termsAndCondition" name="terms-and-conditions">
+                <label for="termsAndCondition">Agree to terms and conditions</label>
+            </div>
 
-        <div>
-          <input type="checkbox" id="termsAndCondition" name="terms-and-conditions">
-          <label for="termsAndCondition">Agree to terms and conditions</label>
-        </div>
-
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-
+            <div>
+              <button type="submit" id="submit">Submit</button>
+            </div>
+          </div>
       </fieldset>
     </form>
   </body>
